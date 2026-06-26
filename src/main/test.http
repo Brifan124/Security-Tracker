@@ -1,0 +1,31 @@
+POST http://localhost:8080/incidents
+Content-Type: application/json
+
+{
+  "title": "SQL Injection Detected",
+  "severity": "HIGH",
+  "status": "OPEN"
+}
+
+### Delete a specific old incident by its exact ID number
+DELETE http://localhost:8080/incidents/5
+
+###
+PUT http://localhost:8080/incidents/7
+Content-Type: application/json
+
+{
+  "title": "Brute Force Attack",
+  "severity": "HIGH",
+  "status": "RESOLVED"
+}
+
+###
+POST http://localhost:8080/incidents
+Content-Type: application/json
+
+{
+  "title": "booty calls",
+  "severity": "HIGH",
+  "status": "OPEN"
+}
